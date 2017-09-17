@@ -21,10 +21,7 @@ public class DecimalCollection {
     }
 
     public double sum() {
-        assert collection != null;
-        if (this.collection.isEmpty()) {
-            throw new ArithmeticException("Empty collection");
-        }
+
         double sum = 0;
         for (double item : this.collection) {
             sum += item;
@@ -33,10 +30,7 @@ public class DecimalCollection {
     }
 
     public double higher() {
-        assert collection != null;
-        if (this.collection.isEmpty()) {
-            throw new ArithmeticException("Empty collection");
-        }
+
         double higher = Double.NEGATIVE_INFINITY;
         for (double item : this.collection) {
             if (item > higher) {
@@ -44,6 +38,16 @@ public class DecimalCollection {
             }
         }
         return higher;
+    }
+    
+    public double multiplicacion(){
+        double result = 1;
+        for (double item : this.collection) {
+                result = result * item;
+            
+        }
+        return result;
+        
     }
 
 }

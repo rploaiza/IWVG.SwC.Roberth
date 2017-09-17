@@ -46,5 +46,10 @@ public class DecimalCollectionTest {
 	public void testHigher() {
 		assertEquals(3, this.decimalCollection.higher(), 10e-5);
 	}
+	
+	@Test
+	public void testMultiplicacion(){
+	    assertEquals(-12, this.decimalCollection.multiplicacion(), 10e-5);
+	}
 
 }
