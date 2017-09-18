@@ -26,5 +26,9 @@ public class Fraction {
     public int getDenominator() {
         return denominator;
     }
+    public Fraction multiplicarPorDos(){
+        Fraction fraction = new Fraction(getNumerator()*2,getDenominator()*2);
+        return fraction;
+    }
 
 }
