@@ -52,5 +52,12 @@ public class PointTest {
         assertEquals(1, pt.getX());
         assertEquals(2, pt.getY());
     }
+    @Test
+    public void testAddOne(){
+        this.pt.addOne();
+        assertEquals(3, pt.getX());
+        assertEquals(4, pt.getY());
+
+    }
 
 }
