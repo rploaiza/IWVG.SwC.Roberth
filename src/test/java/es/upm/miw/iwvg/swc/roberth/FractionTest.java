@@ -30,5 +30,10 @@ public class FractionTest {
     public void testDecimal() {
         assertEquals(2,fr.decimal(),10e-5 );//resultado de la fracción, metodo, formato
     }
+    @Test
+    public void testMultiplicacionPorDos() {
+        assertEquals(6,fr.multiplicarPorDos().getDenominator() );
+        assertEquals(12,fr.multiplicarPorDos().getNumerator() );
+    }
 
 }
