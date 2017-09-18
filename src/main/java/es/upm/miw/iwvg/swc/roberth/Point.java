@@ -40,6 +40,12 @@ public class Point {
     public int getY() {
         return this.y;
     }
+    
+    public void addOne(){
+        this.x = this.x +1;
+        this.y = this.y +1;
+
+    }
 
     @Override
     public String toString() {
