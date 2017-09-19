@@ -1,18 +1,22 @@
 package es.upm.miw.iwvg.swc.roberth;
 
-
 public class User {
-
     private int number;
 
     private String name;
 
     private String familyName;
 
-    public User(int number, String name, String familyName) {
+    private int postalCode;
+
+    private String email;
+
+    public User(int number, String name, String familyName, int postalCode, String email) {
         this.number = number;
         this.name = this.format(name);
         this.familyName = this.format(familyName);
+        this.postalCode = postalCode;
+        this.email = this.format(email);
     }
 
     private String format(String string) {
@@ -37,6 +41,14 @@ public class User {
 
     public String getFamilyName() {
         return this.familyName;
+    }
+
+    public int getPostalCode() {
+        return this.postalCode;
+    }
+
+    public String getEmail() {
+        return this.email;
     }
 
 }
