@@ -43,4 +43,9 @@ public class FractionTest {
         assertEquals(4, fr.add1().getDenominator());
     }
     
+    @Test
+    public void testGetInverse() {
+        assertEquals(3, fr.getInverse().getNumerator());
+        assertEquals(6, fr.getInverse().getDenominator());
+    }
 }

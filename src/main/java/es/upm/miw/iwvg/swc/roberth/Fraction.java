@@ -26,12 +26,17 @@ public class Fraction {
     public int getDenominator() {
         return denominator;
     }
-    public Fraction multiplicarPorDos(){
-        Fraction fraction = new Fraction(getNumerator()*2,getDenominator()*2);
+
+    public Fraction multiplicarPorDos() {
+        Fraction fraction = new Fraction(getNumerator() * 2, getDenominator() * 2);
         return fraction;
     }
-    
+
     public Fraction add1() {
-        return new Fraction(this.getNumerator()+1, this.getDenominator()+1);
+        return new Fraction(this.getNumerator() + 1, this.getDenominator() + 1);
+    }
+
+    public Fraction getInverse() {
+        return new Fraction(this.getDenominator(), this.getNumerator());
     }
 }
