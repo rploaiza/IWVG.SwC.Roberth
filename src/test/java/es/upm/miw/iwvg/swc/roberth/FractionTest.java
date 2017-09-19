@@ -7,10 +7,10 @@ import org.junit.Test;
 
 public class FractionTest {
     private Fraction fr;
-    
+
     @Before
     public void before() {
-        fr = new Fraction(6, 3); //valores a calcular
+        fr = new Fraction(6, 3); // valores a calcular
     }
 
     @Test
@@ -28,12 +28,19 @@ public class FractionTest {
 
     @Test
     public void testDecimal() {
-        assertEquals(2,fr.decimal(),10e-5 );//resultado de la fracción, metodo, formato
-    }
-    @Test
-    public void testMultiplicacionPorDos() {
-        assertEquals(6,fr.multiplicarPorDos().getDenominator() );
-        assertEquals(12,fr.multiplicarPorDos().getNumerator() );
+        assertEquals(2, fr.decimal(), 10e-5);// resultado de la fracción, metodo, formato
     }
 
+    @Test
+    public void testMultiplicacionPorDos() {
+        assertEquals(6, fr.multiplicarPorDos().getDenominator());
+        assertEquals(12, fr.multiplicarPorDos().getNumerator());
+    }
+
+    @Test
+    public void testAdd1() {
+        assertEquals(7, fr.add1().getNumerator());
+        assertEquals(4, fr.add1().getDenominator());
+    }
+    
 }

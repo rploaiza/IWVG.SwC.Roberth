@@ -30,5 +30,8 @@ public class Fraction {
         Fraction fraction = new Fraction(getNumerator()*2,getDenominator()*2);
         return fraction;
     }
-
+    
+    public Fraction add1() {
+        return new Fraction(this.getNumerator()+1, this.getDenominator()+1);
+    }
 }
